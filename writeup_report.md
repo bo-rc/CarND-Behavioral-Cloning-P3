@@ -1,8 +1,8 @@
 # Submission files
-- [x] [model python code]()
-- [x] [drive.py]()
-- [x] [keras trained model]()
-- [x] [writeup(this file)]()
+- [x] [model python code](./model.py)
+- [x] [drive.py](./drive.py)
+- [x] [keras trained model](./nvidia_net_wAugData_continue.h5)
+- [x] [writeup(this file)](https://github.com/bo-rc/CarND-Behavioral-Cloning-P3/blob/master/writeup_report.md)
 
 # Data aquisition
 
@@ -32,10 +32,12 @@ As we can see, the raw data of the steering has a strong bias to 0.0, i.e. strai
 ### here is some visualizations of this augmented dataset
 
 * augmented camera views:
+
 ![left_center_right](FIGS/sample_six_camera_view1.png)
 ![left_center_right](FIGS/sample_six_camera_view2.png)
 
 * augmented steering angle distribution:
+
 ![steering](FIGS/steering_distribution_aug.png)
 
 # Convolutional Neron Network architecture
