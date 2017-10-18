@@ -61,5 +61,6 @@ Initially, the full NVIDIA's net was used and trained using CPUs because my GTX6
 
 The car can drive at full speed (30MPH) on track 1 with no problem. However, it cannot drive on other tracks for longer than a few tens of seconds. This is due to the fact that the training dataset is so specific and the track used for training is relatively short; we do not have enough data for the car to generalize for other types of terrains. Generalization can be done using transfer learning techniques and fine-tuned using more data, which is left for future improvements.
 
-|:---------:|
+
 |[YouTube HD](https://www.youtube.com/watch?v=9kh1K6wM3sk)|
+|:---------:|
