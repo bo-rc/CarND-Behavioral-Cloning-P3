@@ -3,6 +3,7 @@
 - [x] [drive.py](./drive.py)
 - [x] [keras trained model](./nvidia_net_wAugData_continue.h5)
 - [x] [writeup(this file)](https://github.com/bo-rc/CarND-Behavioral-Cloning-P3/blob/master/writeup_report.md)
+- [x] [YouTube drive recording](https://www.youtube.com/watch?v=9kh1K6wM3sk)
 
 # Data aquisition
 
