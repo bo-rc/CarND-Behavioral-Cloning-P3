@@ -1,3 +1,6 @@
+# Write-up report
+[write-up](https://github.com/bo-rc/CarND-Behavioral-Cloning-P3/blob/master/writeup_report.md)
+
 # Behaviorial Cloning Project
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
