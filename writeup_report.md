@@ -15,9 +15,11 @@ The version 1 simulator is used for data collection.
 ## Raw data visualization
 
 * samples of images:
+
 ![left_center_right](FIGS/sample_three_camera_view.png)
 
 * steering angle distribution:
+
 ![steering](FIGS/steering_distribution_raw.png)
 
 ## Data augmentation
@@ -48,7 +50,9 @@ As we can see, the raw data of the steering has a strong bias to 0.0, i.e. strai
 # Training and tuning
 The training dataset was split into 25% validation, 5% testing and 75% training segments.
 
-For an old GTX690 to handle the training, I used a bach_size of 144, Epochs of 5 and a fixed learning_rate of 0.001. This model was further tuned using a fixed learning_rate of 0.0005 and Epochs of 3. The validation loss is about 1% for the final model.
+For an old GTX690 to handle the training, I used Adam optimizer with a bach_size of 144, Epochs of 5 and a learning_rate of 0.001. This model was further tuned using a learning_rate of 0.0005 and Epochs of 3. The validation loss is about 1% for the final model.
+
+Initially, the full NVIDIA's net was used and trained using CPUs because my GTX690 does not have enough memory for bigger models. The result is worse than my model. One possible reason is that the simulation we used in this course does not generate high fidelity images so that we should not use a complex CNN to abstract the image for many levels. Using only the raw dataset with no augmentation does not generate a usable model due to the high bias towards straight-line driving with raw dataset. So, the data augmentation is necessary for this project.
 
 # Test drive
 ![test_drive](FIGS/test_drive2.gif)
