@@ -2,16 +2,12 @@
 import pickle
 import numpy as np
 import pandas as pd
-from keras.models import Sequential
 from keras.layers import *
 from keras.models import Sequential
 from keras.backend import tf as ktf
 from keras.optimizers import Adam
 from helpers import *
 from keras_multiGPU import make_parallel
-
-
-import os
 
 csv_filename = 'driving_log_aug.csv'
 data_path = "../sim_data/data/"
@@ -29,10 +25,6 @@ split_test = len(data)
 data_train = data[:split_train]
 data_valid = data[split_train:split_valid]
 data_test = data[split_valid:split_test]
-
-print(len(data_train))
-print(len(data_valid))
-print(len(data_test))
 
 
 def nvidia_net(input_shape=(160, 320, 3)):
