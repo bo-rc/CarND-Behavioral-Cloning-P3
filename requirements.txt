@@ -1,10 +1,11 @@
-numpy==1.12.1
-pandas==0.20.1
+numpy==1.13.3
+eventlet==0.21.0
 Flask==0.12.2
+pandas==0.20.1
+Keras==2.1.2
+tensorflow_gpu==1.4.0
 h5py==2.7.0
 Pillow==4.3.0
-eventlet==0.21.0
-keras==2.0.8
 moviepy==0.2.3.2
 gevent_socketio==0.3.6
-tensorflow==1.4.0rc0
+tensorflow==1.4.0

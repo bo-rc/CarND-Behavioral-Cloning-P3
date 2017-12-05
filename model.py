@@ -94,5 +94,5 @@ values = model_nv.fit_generator(train_sample_generator(data_train, BATCH_SIZE),
                              validation_steps=n_steps_valid,
                              epochs=EPOCHS)
 
-model_nv.save('nvidia_net_wAugData.h5')
+model_nv.save('nvidia_net_wAugData_Dec01.h5')
 

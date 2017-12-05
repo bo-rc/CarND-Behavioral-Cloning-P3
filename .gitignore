@@ -1,2 +1,4 @@
 # pycharm files
-.idea/*
+.idea*
+# model files
+*.h5
